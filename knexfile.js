@@ -8,7 +8,11 @@ module.exports = {
       filename: './dev.sqlite3'
     },
     // necessary when using sqlite3, prevents crashes
-    useNullAsDefault: true
+    useNullAsDefault: true,
+    // generates migration files in a data/migrations/ folder
+    migrations: {
+      directory: './data/migrations'
+    }
   },
 
   staging: {
